@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --main-color: #ca9060;
+  --main-white: rgb(240, 240, 240);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: var(--main-white);
+}
+body {
+  margin: auto;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.container {
+  max-width: 1366px;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.content-container {
+  max-width: 1229.4px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  padding-top: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li:not(:first-child) {
+  margin-left: 2.5rem;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transition: 0.2s;
+}
+
+nav ul li a:hover::before {
+  background-color: var(--main-color);
+}
+
+#home {
+  height: 100vh;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(imgs/breakfast.jpg);
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+#home p {
+  padding-bottom: 2rem;
+}
+
+#home button {
+  outline: none;
+  background: none;
+
+  padding: 0.75rem 4.5rem;
+
+  border: 2px solid var(--main-color);
+  border-radius: 50px;
+
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--main-color);
+}
+
+#home button:hover {
+  background-color: var(--main-color);
+  color: var(--main-white);
+}
