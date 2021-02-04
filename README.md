@@ -1,3 +1,3 @@
 # Coffelab landing page
 
-![Coffe landing page](coofelab-lading-page.png)
+![Coffe landing page](coofelab-landing-page.png)
